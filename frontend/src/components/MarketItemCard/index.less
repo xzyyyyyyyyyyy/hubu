@@ -1,0 +1,164 @@
+.market-item-card {
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .item-image-section {
+    position: relative;
+    margin-bottom: 12px;
+
+    .item-image {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+
+      .image-count {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 12px;
+      }
+    }
+
+    .no-image {
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fafafa;
+      border-radius: 8px;
+      color: #8c8c8c;
+    }
+
+    .status-tags {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .urgent-tag, .discount-tag, .status-tag {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .item-info {
+    margin-bottom: 12px;
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+
+      .item-title-section {
+        flex: 1;
+        min-width: 0;
+
+        .item-title {
+          margin: 0;
+          
+          .category-icon {
+            margin-right: 4px;
+          }
+        }
+      }
+
+      .item-condition {
+        margin-left: 8px;
+      }
+    }
+
+    .price-section {
+      margin-bottom: 8px;
+
+      .current-price {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 4px;
+
+        .price-amount {
+          font-size: 18px;
+          font-weight: bold;
+          color: #f5222d;
+        }
+      }
+
+      .original-price {
+        font-size: 12px;
+      }
+    }
+
+    .item-description {
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .item-location {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 8px;
+      color: #666;
+    }
+
+    .item-tags {
+      margin-bottom: 8px;
+    }
+  }
+
+  .seller-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid #f0f0f0;
+    margin-bottom: 8px;
+
+    .seller-basic {
+      .seller-name {
+        font-size: 12px;
+      }
+    }
+
+    .seller-stats {
+      font-size: 11px;
+    }
+  }
+
+  .item-stats {
+    margin-bottom: 12px;
+
+    .like-btn {
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #f5222d;
+      }
+    }
+
+    .publish-time {
+      font-size: 11px;
+    }
+  }
+
+  .item-actions {
+    .ant-btn {
+      font-size: 12px;
+    }
+  }
+}

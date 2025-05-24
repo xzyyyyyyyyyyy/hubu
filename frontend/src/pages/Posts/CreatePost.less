@@ -1,0 +1,107 @@
+.create-post-page {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+
+  .create-post-card {
+    .post-header {
+      margin-bottom: 24px;
+      text-align: center;
+      
+      h3 {
+        margin-bottom: 8px;
+      }
+    }
+
+    .create-post-form {
+      .editor-mode-selector {
+        margin-bottom: 12px;
+      }
+
+      .post-settings-card {
+        background: #fafafa;
+        
+        .settings-header {
+          margin-bottom: 16px;
+        }
+        
+        .setting-item {
+          margin-bottom: 12px;
+          
+          .setting-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .setting-info {
+              .setting-desc {
+                display: block;
+                font-size: 12px;
+                margin-top: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .create-post-sidebar {
+    .action-card, .guide-card, .rules-card, .tags-card {
+      margin-bottom: 16px;
+    }
+
+    .draft-actions {
+      margin-top: 8px;
+    }
+
+    .guide-card, .rules-card {
+      .guide-content, .rules-content {
+        .guide-item {
+          margin-bottom: 12px;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        
+        ul {
+          margin: 8px 0 0 0;
+          padding-left: 16px;
+          
+          li {
+            margin-bottom: 4px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .tags-card {
+      .hot-tags {
+        .hot-tag {
+          cursor: pointer;
+          margin-bottom: 8px;
+          
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .create-post-page {
+    padding: 16px;
+    
+    .create-post-form {
+      .ant-row {
+        .ant-col {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

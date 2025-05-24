@@ -1,0 +1,108 @@
+.parttime-card {
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    .job-basic-info {
+      flex: 1;
+      
+      .job-title-line {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        
+        .job-title {
+          margin: 0;
+          flex: 1;
+          
+          .category-icon {
+            margin-right: 8px;
+          }
+        }
+        
+        .urgent-tag {
+          flex-shrink: 0;
+        }
+      }
+      
+      .company-info {
+        color: #666;
+      }
+    }
+
+    .salary-info {
+      text-align: right;
+      
+      .salary-amount {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: #f5222d;
+        font-weight: bold;
+        font-size: 16px;
+        
+        .amount {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .job-info {
+    margin-bottom: 12px;
+    
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #666;
+      
+      .anticon {
+        color: #8c8c8c;
+      }
+    }
+  }
+
+  .job-description {
+    margin-bottom: 12px;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .requirements {
+    margin-bottom: 16px;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+
+    .poster-info {
+      .poster-name {
+        font-size: 12px;
+      }
+    }
+
+    .job-stats {
+      .publish-time {
+        font-size: 12px;
+      }
+    }
+  }
+}

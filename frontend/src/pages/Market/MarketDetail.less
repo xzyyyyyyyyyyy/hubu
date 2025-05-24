@@ -1,0 +1,240 @@
+.market-detail-content {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+}
+
+.market-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.market-breadcrumb {
+  margin-bottom: 16px;
+}
+
+.item-images-card {
+  margin-bottom: 24px;
+  
+  .images-section {
+    .image-slide {
+      text-align: center;
+    }
+    
+    .custom-dots {
+      .ant-carousel-dot {
+        background: #d9d9d9;
+      }
+      
+      .ant-carousel-dot-active {
+        background: #1890ff;
+      }
+    }
+    
+    .thumbnail-list {
+      margin-top: 16px;
+    }
+  }
+  
+  .no-images {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #8c8c8c;
+  }
+}
+
+.item-detail-card {
+  .item-descriptions {
+    margin-bottom: 24px;
+    
+    .ant-descriptions-item-label {
+      font-weight: 500;
+      color: #595959;
+    }
+  }
+  
+  .item-description {
+    margin-bottom: 24px;
+    
+    .description-text {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #262626;
+    }
+  }
+  
+  .item-tags {
+    margin-bottom: 16px;
+  }
+}
+
+.item-sidebar {
+  .price-action-card, .seller-card, .stats-card, .tips-card, .similar-items-card {
+    margin-bottom: 16px;
+  }
+  
+  .price-action-card {
+    .item-header {
+      margin-bottom: 16px;
+      
+      .item-title {
+        margin-bottom: 8px;
+        color: #262626;
+        
+        .category-icon {
+          margin-right: 8px;
+        }
+      }
+      
+      .item-meta {
+        margin-bottom: 8px;
+      }
+    }
+    
+    .price-section {
+      margin-bottom: 16px;
+      
+      .current-price {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        
+        .price-amount {
+          font-size: 24px;
+          font-weight: bold;
+          color: #f5222d;
+        }
+      }
+      
+      .price-comparison {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+    
+    .action-buttons {
+      .ant-space-vertical {
+        gap: 12px;
+      }
+    }
+  }
+  
+  .seller-card {
+    .seller-info {
+      .seller-basic {
+        margin-bottom: 12px;
+        
+        .seller-name {
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+        
+        .seller-rating {
+          .ant-rate {
+            color: #faad14;
+          }
+        }
+      }
+      
+      .seller-stats {
+        margin-bottom: 12px;
+        
+        .stat-item {
+          text-align: center;
+          
+          .stat-number {
+            font-size: 16px;
+            font-weight: bold;
+            color: #262626;
+          }
+          
+          .stat-label {
+            font-size: 12px;
+            color: #8c8c8c;
+          }
+        }
+      }
+      
+      .contact-info {
+        .contact-header {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  
+  .stats-card {
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      .stat-icon {
+        font-size: 20px;
+        color: #1890ff;
+        margin-bottom: 8px;
+      }
+      
+      .stat-content {
+        text-align: center;
+        
+        .stat-number {
+          font-size: 16px;
+          font-weight: bold;
+          color: #262626;
+        }
+        
+        .stat-label {
+          font-size: 12px;
+          color: #8c8c8c;
+        }
+      }
+    }
+  }
+  
+  .tips-card {
+    .tips-content {
+      .tip-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 8px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        .anticon {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .market-detail-content {
+    padding: 16px;
+  }
+  
+  .price-action-card {
+    .item-header {
+      .item-title {
+        font-size: 18px;
+      }
+    }
+    
+    .price-section {
+      .current-price {
+        .price-amount {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

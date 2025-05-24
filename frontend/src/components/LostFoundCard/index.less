@@ -1,0 +1,109 @@
+.lostfound-card {
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    .item-info {
+      flex: 1;
+    }
+
+    .reward-info {
+      text-align: right;
+      
+      .reward-amount {
+        color: #f5222d;
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+      }
+    }
+  }
+
+  .item-title {
+    margin-bottom: 8px;
+    
+    h4 {
+      margin: 0;
+      
+      .category-icon {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .item-description {
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .item-details {
+    margin-bottom: 12px;
+    
+    .detail-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      color: #666;
+      
+      .anticon {
+        color: #8c8c8c;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .item-images {
+    margin-bottom: 12px;
+    
+    .more-images {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+      border-radius: 4px;
+      color: #8c8c8c;
+      font-size: 12px;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-top: 8px;
+    border-top: 1px solid #f0f0f0;
+
+    .poster-info {
+      .poster-name, .publish-time {
+        font-size: 12px;
+      }
+    }
+
+    .item-stats {
+      font-size: 12px;
+    }
+  }
+
+  .card-actions {
+    .ant-btn {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.parttime-page {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+
+  .parttime-filters {
+    .publish-card, .filter-card, .stats-card {
+      margin-bottom: 16px;
+    }
+
+    .salary-range-text {
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .stat-item {
+      text-align: center;
+      
+      .stat-number {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1890ff;
+      }
+      
+      .stat-label {
+        font-size: 12px;
+        color: #8c8c8c;
+      }
+    }
+  }
+
+  .mobile-filter-btn {
+    display: none;
+    margin-bottom: 16px;
+    
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+
+  .parttime-header {
+    margin-bottom: 16px;
+  }
+
+  .parttime-list {
+    .parttime-pagination {
+      margin-top: 32px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .parttime-page {
+    padding: 16px;
+    
+    .parttime-filters {
+      display: none;
+    }
+  }
+}

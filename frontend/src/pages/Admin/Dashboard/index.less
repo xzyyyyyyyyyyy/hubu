@@ -1,0 +1,93 @@
+.admin-dashboard {
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .header-actions {
+      .ant-space {
+        gap: 12px;
+      }
+    }
+  }
+
+  .statistics-row {
+    margin-bottom: 24px;
+
+    .statistics-card {
+      .growth-indicator {
+        margin-top: 8px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .chart-card {
+    .ant-card-body {
+      padding-top: 16px;
+    }
+  }
+
+  .table-card {
+    .ant-table-tbody {
+      tr:hover {
+        background-color: #fafafa;
+      }
+    }
+  }
+
+  .list-card {
+    .post-title {
+      font-weight: 500;
+      color: #1890ff;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .performance-card {
+    .performance-item {
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .performance-label {
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .quick-actions-card {
+    .quick-actions {
+      .ant-btn {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .statistics-row {
+      .ant-col {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

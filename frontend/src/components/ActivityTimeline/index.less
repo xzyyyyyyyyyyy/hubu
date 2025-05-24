@@ -1,0 +1,41 @@
+.activity-timeline-card {
+  .timeline-loading {
+    text-align: center;
+    padding: 20px 0;
+    color: #8c8c8c;
+  }
+
+  .activity-timeline {
+    .activity-item {
+      .activity-content {
+        .activity-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 4px;
+
+          .activity-time {
+            font-size: 12px;
+          }
+        }
+
+        .activity-description {
+          .clickable {
+            cursor: pointer;
+            
+            &:hover {
+              color: #1890ff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .timeline-footer {
+    text-align: center;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+  }
+}

@@ -1,0 +1,90 @@
+.lostfound-page {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+
+  .lostfound-header {
+    margin-bottom: 16px;
+    
+    .header-info {
+      h3 {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .intro-card {
+    margin-bottom: 16px;
+    
+    .intro-item {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      
+      .intro-icon {
+        font-size: 32px;
+        margin-right: 12px;
+      }
+      
+      .intro-content {
+        h4 {
+          margin-bottom: 4px;
+          color: #262626;
+        }
+        
+        p {
+          margin: 0;
+          color: #8c8c8c;
+        }
+      }
+    }
+  }
+
+  .filter-card {
+    margin-bottom: 16px;
+    
+    .lostfound-tabs {
+      .ant-tabs-tab {
+        position: relative;
+      }
+    }
+
+    .advanced-filters {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #f0f0f0;
+    }
+  }
+
+  .lostfound-list {
+    .lostfound-pagination {
+      margin-top: 32px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .lostfound-page {
+    padding: 16px;
+    
+    .intro-card {
+      .intro-item {
+        flex-direction: column;
+        text-align: center;
+        
+        .intro-icon {
+          margin-right: 0;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    
+    .filter-card {
+      .ant-row {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  }
+}

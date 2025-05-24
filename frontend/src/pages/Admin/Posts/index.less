@@ -1,0 +1,79 @@
+.post-management {
+  .stats-row {
+    margin-bottom: 24px;
+  }
+
+  .post-list-card {
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding: 16px;
+      background: #fafafa;
+      border-radius: 8px;
+
+      .toolbar-left, .toolbar-right {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+
+    .post-info-cell {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+
+      .post-details {
+        flex: 1;
+        min-width: 0;
+
+        .post-title {
+          font-weight: 500;
+          margin-bottom: 4px;
+          cursor: pointer;
+          color: #1890ff;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .post-meta {
+          font-size: 12px;
+          color: #8c8c8c;
+        }
+      }
+    }
+
+    .author-meta {
+      font-size: 12px;
+      color: #8c8c8c;
+    }
+
+    .reported-row {
+      background-color: #fff2f0;
+      
+      &:hover {
+        background-color: #ffece8 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .post-management {
+    .post-list-card {
+      .toolbar {
+        flex-direction: column;
+        gap: 16px;
+
+        .toolbar-left, .toolbar-right {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

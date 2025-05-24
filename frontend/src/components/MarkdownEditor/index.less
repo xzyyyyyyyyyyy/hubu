@@ -1,0 +1,98 @@
+.markdown-editor {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .editor-toolbar {
+    padding: 8px 12px;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .editor-tabs {
+    .ant-tabs-nav {
+      margin: 0;
+      padding: 0 12px;
+      background: #fff;
+      
+      &::before {
+        border: none;
+      }
+    }
+    
+    .ant-tabs-content {
+      margin: 0;
+      
+      .ant-tabs-tabpane {
+        padding: 0;
+      }
+    }
+  }
+
+  .markdown-textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  .markdown-preview {
+    padding: 12px;
+    background: #fff;
+    
+    .markdown-content {
+      line-height: 1.6;
+      
+      h1, h2, h3, h4, h5, h6 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-weight: 600;
+      }
+      
+      p {
+        margin-bottom: 16px;
+      }
+      
+      code {
+        padding: 2px 4px;
+        background: #f6f8fa;
+        border-radius: 3px;
+        font-size: 85%;
+      }
+      
+      pre {
+        padding: 16px;
+        background: #f6f8fa;
+        border-radius: 6px;
+        overflow: auto;
+      }
+      
+      blockquote {
+        padding: 0 16px;
+        margin: 0 0 16px 0;
+        border-left: 4px solid #dfe2e5;
+        color: #6a737d;
+      }
+      
+      ul, ol {
+        padding-left: 24px;
+        margin-bottom: 16px;
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .editor-help {
+    padding: 8px 12px;
+    background: #fafafa;
+    border-top: 1px solid #f0f0f0;
+  }
+}

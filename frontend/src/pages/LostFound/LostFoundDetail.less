@@ -1,0 +1,184 @@
+.lostfound-detail-content {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+}
+
+.lostfound-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lostfound-breadcrumb {
+  margin-bottom: 16px;
+}
+
+.item-detail-card {
+  margin-bottom: 24px;
+  
+  .item-header {
+    .item-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      
+      .type-icon {
+        font-size: 20px;
+        margin-right: 8px;
+      }
+    }
+    
+    .item-title {
+      margin-bottom: 16px;
+      color: #262626;
+      font-weight: 600;
+      
+      .category-icon {
+        margin-right: 8px;
+      }
+    }
+    
+    .item-poster-info {
+      .poster-details {
+        .poster-name {
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+        
+        .publish-time {
+          color: #8c8c8c;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  .status-alert {
+    margin: 16px 0;
+  }
+  
+  .item-details {
+    .item-descriptions {
+      margin-bottom: 24px;
+      
+      .ant-descriptions-item-label {
+        font-weight: 500;
+        color: #595959;
+      }
+    }
+    
+    .item-description {
+      margin-bottom: 24px;
+      
+      .description-text {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #262626;
+      }
+    }
+    
+    .item-images {
+      margin-bottom: 24px;
+    }
+  }
+  
+  .item-stats {
+    .stat-item {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background: #fafafa;
+      border-radius: 8px;
+      
+      .stat-icon {
+        font-size: 24px;
+        color: #1890ff;
+        margin-right: 12px;
+      }
+      
+      .stat-content {
+        .stat-number {
+          font-size: 20px;
+          font-weight: bold;
+          color: #262626;
+        }
+        
+        .stat-label {
+          font-size: 12px;
+          color: #8c8c8c;
+        }
+      }
+    }
+  }
+}
+
+.item-sidebar {
+  .contact-card, .poster-card, .tips-card, .similar-items-card {
+    margin-bottom: 16px;
+  }
+  
+  .poster-card {
+    .poster-info {
+      .poster-basic {
+        margin-bottom: 12px;
+      }
+      
+      .contact-info {
+        padding-top: 12px;
+        border-top: 1px solid #f0f0f0;
+        
+        .contact-header {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  
+  .tips-card {
+    .tips-content {
+      .tip-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 8px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        .anticon {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .lostfound-detail-content {
+    padding: 16px;
+  }
+  
+  .item-detail-card {
+    .item-header {
+      .item-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      
+      .item-title {
+        font-size: 20px;
+      }
+    }
+    
+    .item-details {
+      .item-descriptions {
+        .ant-descriptions {
+          column-count: 1;
+        }
+      }
+    }
+  }
+}
